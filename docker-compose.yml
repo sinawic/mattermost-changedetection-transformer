@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  mattermost-changedetection-transformer:
+    image: sinawic/mattermost-changedetection-transformer
+    restart: always
+    env_file: .env
+    ports:
+      - 3000:3000
+
